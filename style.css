@@ -1,4 +1,6 @@
 @import url("https://use.typekit.net/jmk3xov.css");
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
 
 canvas {
   position: fixed;
@@ -20,15 +22,31 @@ main {
 h1, h2, h3, blockquote {
   font-family: elevon, sans-serif;
   font-weight: 700;
-  font-style: normal;
-  color: rgb(255, 0, 242);
+  color: rgb(241, 3, 3);
+  font-style: italic;
+}
+
+h1 {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+
+div {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px black;
+  display: inline-block;
+  position: relative;
+  bottom: -75px;
+  left: 75px;
 }
 
 header {
   background: var(--transparent-bg);
-  grid-column: 2 / span 5;
+  grid-column: 2 / span 6;
   font-size: 2.5rem;
-  padding: 2rem;
+  padding: 7rem;
   margin-bottom: var(--spacing);
   color: white;
 }
@@ -46,20 +64,21 @@ section {
 blockquote {
   margin: 0;
   padding: 0;
-  grid-column: 2 / span 9;
+  background-color: white;
+  border-radius: 2px;
+  grid-column: 2 / span 7;
   margin-bottom: var(--spacing);
 }
 
 blockquote p {
   color: black;
-  background-color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   display: inline;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .left {
-  grid-column: 6 / 12;
+  grid-column: 4 / 12;
 }
 
 :root {
@@ -68,4 +87,18 @@ blockquote p {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+header .fast{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: oblique;
+}
+
+.quote {
+  font-size: 1.83rem;
+}
+
+strong {
+  color: white;
 }

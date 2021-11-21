@@ -62,12 +62,12 @@ Array(200).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('lost.jpg');
+const spaceTexture = new THREE.TextureLoader().load('yo.jpg');
 scene.background = spaceTexture;
 
 // Avatar
 
-const avatarTexture = new THREE.TextureLoader().load('soshoka.jpg');
+const avatarTexture = new THREE.TextureLoader().load('fro.png');
 
 const avatar = new THREE.Mesh(
   new THREE.BoxGeometry(3,3,3),
@@ -93,7 +93,7 @@ moon.position.z = 30;
 moon.position.setX(-10);
 
 avatar.position.z = -5;
-avatar.position.x = 2;
+avatar.position.x = 1;
 
 // Scroll Animation
 
